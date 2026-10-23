@@ -1,0 +1,21 @@
+/* ---------- Contact & location (matches the live site) ---------- */
+.contact-sec { background: var(--paper); }
+.contact-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; align-items: start; }
+.contact-blocks { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 26px; }
+.contact-blocks li { display: grid; grid-template-columns: 54px 1fr; gap: 18px; }
+.cb-ic { width: 54px; height: 54px; border-radius: 12px; background: #EEF2EE; color: var(--ink); display: grid; place-items: center; }
+.contact-blocks h3 { font-size: 1.08rem; margin-bottom: 4px; }
+.contact-blocks p { color: var(--muted); line-height: 1.7; }
+.contact-blocks a { color: var(--ink); text-decoration: none; }
+.contact-blocks a:hover { text-decoration: underline; }
+.cb-accent { color: #E26B2C !important; font-weight: 500; }
+.cb-inline { vertical-align: -2px; margin-right: 6px; }
+.ask-card { background: #FAF8F2; border: 1px solid #ECE6D6; border-radius: 18px; padding: 28px 30px; margin-top: 10px; }
+.ask-card h3 { font-size: 1.25rem; margin-bottom: 8px; }
+.ask-card p { color: var(--muted); margin-bottom: 18px; }
+.ask-card .btn { border-radius: 99px; height: auto; padding: 14px 28px; }
+.map-card { border-radius: 18px; overflow: hidden; box-shadow: var(--shadow); border: 1px solid var(--line); }
+.map-card .map { min-height: 470px; }
+.contact-form { margin-top: 48px; }
+@media (max-width: 900px) { .contact-layout { grid-template-columns: minmax(0, 1fr); gap: 28px; } .map-card .map { min-height: 320px; } }
+.foot-contact span { display: block; }
